@@ -22,10 +22,10 @@ pigeon_data = {
 def nyc_pigeon_organizer (list) #method takes in argument of pigeon list
   final = {} # new hash with new final info
 
-  list.each do |first_level, all_other|
+  list.each do |first_level, all_other| # iterate over hashes levels
     all_other.each do |attribute, array|
-      array.each do |name|
-        final[name] = {:color => [], :gender => [], :lives => []}
+      array.each do |name| # iterate through array with name
+        final[name] = {:color => [], :gender => [], :lives => []} # 
       end
     end
   end
